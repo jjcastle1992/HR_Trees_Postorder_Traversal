@@ -49,10 +49,20 @@ class Node {
 };
 
 */
-
+    /* Post-Order Traversal "visits":
+     * 1. LEFT
+     * 2. RIGHT
+     * 3. ROOT
+     *
+     * Time Complexity O(n)
+     * Space Complexity O(n)
+     */
 
     void postOrder(Node *root) {
-
+        //Check to see if the root is null
+        //Go left as far as you can
+        //Go right as far as you can
+        //Print your payload when you've gone to a leaf node.
     }
 
 }; //End of Solution
