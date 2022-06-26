@@ -60,9 +60,17 @@ class Node {
 
     void postOrder(Node *root) {
         //Check to see if the root is null
-        //Go left as far as you can
-        //Go right as far as you can
-        //Print your payload when you've gone to a leaf node.
+        if (root) {
+            //Go left as far as you can
+            postOrder(root->left);
+            //Go right as far as you can
+            postOrder(root->right);
+            //Print your payload when you've gone to a leaf node.
+            std::cout << root->data << " ";
+        }
+        else {
+            return;
+        }
     }
 
 }; //End of Solution
